@@ -34,7 +34,13 @@ contract VotingContract is ERC20Votes {
         uint startTime;
         mapping(address => bool) voted;
     }
-    
+
+    // Define a struct to represent an owner, store his/her name, equity ownership and voting rights
+    struct Owner {
+        string name;
+        uint equityOwnership;
+        uint votingRights;
+    }
     // Define a mapping to store the proposals
     mapping(uint => Proposal) public proposals;
     
