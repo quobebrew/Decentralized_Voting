@@ -87,3 +87,9 @@ contract VotingContract is ERC20Votes {
     // Define a function to remove an owner
     function removeOwner(address _owner) public onlyOwner {
         equityOwnership[_owner] = 0;
+    }
+
+    // Define a function to return the current proposal and the votes
+    function currentProposal() public view returns (string memory, uint, uint) {
+        return (proposals[proposalCount - 1].description, proposals[proposalCount - 1].voteCount, proposals[proposalCount - 1].duration);
+    }
