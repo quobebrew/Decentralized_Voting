@@ -26,8 +26,6 @@ accounts = w3.eth.accounts
 st.title("Decentralized Voting Platform")
 
 # Select account from dropdown
-#selected_account = "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"
-
 selected_account = st.selectbox("Select Account", accounts)
 w3.eth.default_account = selected_account
 
@@ -99,6 +97,6 @@ proposal_id_view = st.number_input("Proposal ID to View", min_value=1)
 st.write(f"proposal view id: {proposal_id_view}")
 
 if st.button("View Proposal"):
-        proposal = contract.functions.getProposal(1).call()
+        proposal = contract.functions.getProposal(proposal_id_view).call()
         st.write(proposal)
        
