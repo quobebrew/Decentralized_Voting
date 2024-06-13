@@ -1,30 +1,9 @@
 [
 	{
 		"inputs": [],
+		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "constructor"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "owner",
-				"type": "address"
-			}
-		],
-		"name": "OwnableInvalidOwner",
-		"type": "error"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "account",
-				"type": "address"
-			}
-		],
-		"name": "OwnableUnauthorizedAccount",
-		"type": "error"
 	},
 	{
 		"anonymous": false,
@@ -103,6 +82,7 @@
 		"type": "event"
 	},
 	{
+		"constant": false,
 		"inputs": [
 			{
 				"internalType": "string",
@@ -117,10 +97,12 @@
 		],
 		"name": "createProposal",
 		"outputs": [],
+		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
+		"constant": false,
 		"inputs": [
 			{
 				"internalType": "uint256",
@@ -130,10 +112,12 @@
 		],
 		"name": "executeProposal",
 		"outputs": [],
+		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
+		"constant": true,
 		"inputs": [
 			{
 				"internalType": "uint256",
@@ -169,10 +153,27 @@
 				"type": "bool"
 			}
 		],
+		"payable": false,
 		"stateMutability": "view",
 		"type": "function"
 	},
 	{
+		"constant": true,
+		"inputs": [],
+		"name": "isOwner",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
 		"inputs": [],
 		"name": "owner",
 		"outputs": [
@@ -182,10 +183,12 @@
 				"type": "address"
 			}
 		],
+		"payable": false,
 		"stateMutability": "view",
 		"type": "function"
 	},
 	{
+		"constant": true,
 		"inputs": [
 			{
 				"internalType": "uint256",
@@ -221,10 +224,12 @@
 				"type": "bool"
 			}
 		],
+		"payable": false,
 		"stateMutability": "view",
 		"type": "function"
 	},
 	{
+		"constant": false,
 		"inputs": [
 			{
 				"internalType": "address",
@@ -244,17 +249,21 @@
 		],
 		"name": "registerVoter",
 		"outputs": [],
+		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
+		"constant": false,
 		"inputs": [],
 		"name": "renounceOwnership",
 		"outputs": [],
+		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
+		"constant": false,
 		"inputs": [
 			{
 				"internalType": "address",
@@ -264,10 +273,12 @@
 		],
 		"name": "transferOwnership",
 		"outputs": [],
+		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
+		"constant": false,
 		"inputs": [
 			{
 				"internalType": "uint256",
@@ -277,10 +288,12 @@
 		],
 		"name": "vote",
 		"outputs": [],
+		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
+		"constant": true,
 		"inputs": [
 			{
 				"internalType": "address",
@@ -306,6 +319,7 @@
 				"type": "bool"
 			}
 		],
+		"payable": false,
 		"stateMutability": "view",
 		"type": "function"
 	}
