@@ -121,4 +121,11 @@ The smart contract handles voter registration, vote casting, and vote counting. 
 4. **Vote on Proposals**: Voters cast their votes on proposals.
 5. **Execute Proposals**: Owner executes proposals after the voting period ends, finalizing the process.
 
+### Contributors
+- Alfred Brew – Team Lead
+- Vishnu Ganapathiappan Vardhan – Lead Developer
+- Chris Cronin – Product Research 
+- Ravi Yeleswarapu – Sales & Marketing
+- Serena Shkabari – Member
+
 
