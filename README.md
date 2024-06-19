@@ -1,3 +1,4 @@
+The Code is in the Iteration_3_deligation folder
 # Decentralized Voting Platform
 
 ## Project Overview
